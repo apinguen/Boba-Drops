@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #758ECD;
+    --secondary-color: #D9F7FA;
+    --bg-color: #36393B;
+    --text-color: #000000;
+}
+#header {
+    width: "100%";
+    background-color: var(--primary-color);
+}
