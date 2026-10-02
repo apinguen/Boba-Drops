@@ -110,6 +110,30 @@ li {
     margin-left: 5px;
 }
 
+.storyImage {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.flexy {
+    display: flex;
+}
+
+.imageL {
+    float: left;
+    margin-right: 15px;
+}
+
+.imageR {
+    float: right;
+    margin-left: 15px;
+}
+
+.imageM {
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: tommysoft;
     src: url('fonts/tommysoft.woff');
