@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #001448;
+    --secondary-color: #D9F7FA;
+    --bg-color: #011421;
+    --text-color: #FFFFFF;
+    --heading-color: #FFFFFF;
+    --font-family: verdana;
+}
+
+div {
+    width: "100%";
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5%;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+h1 {
+    color: var(--heading-color);
+    font-size:300%;
+}
+
+p {
+    color: var(--text-color);
+}
+
+#content {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
