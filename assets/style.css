@@ -1,39 +1,126 @@
 :root {
-    --primary-color: #001448;
-    --secondary-color: #D9F7FA;
-    --bg-color: #011421;
-    --text-color: #FFFFFF;
-    --heading-color: #FFFFFF;
-    --font-family: verdana;
+    --primary-color: #0a0c2c;
+    --bg-color: #001852;
+    --text-color: #8fb6ff;
+    --heading-text-color: #9cbdff;
+    --border-color: #010833;
+    --link-color: #FFFFFF;
+    --font-family-main: tommysoft;
+    --font-family-heading: tommysoft;
 }
 
-div {
-    width: "100%";
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 5%;
-    text-align: center;
-    background-color: var(--primary-color);
-}
-
-html {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
+h1, h2, h3 {
+    color: var(--heading-text-color);
+    font-family: var(--font-family-heading);
 }
 
 h1 {
-    color: var(--heading-color);
-    font-size:300%;
+    font-size:500%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+html {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font-family-main);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p {
     color: var(--text-color);
 }
 
-#content {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
+li {
+    padding: 1px;
+    margin: 0 10px;
+}
+
+.navbar {
+    background-color: var(--border-color);
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.navlinks {
+    flex: 20;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .content {
+    border-radius: 10px;
+    border: 3px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+.header, .section {
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 100px;
+    text-align: center;
+    width: 90%;
+}
+
+.section {
+    display: flex;
+    width: 90.5%;
+}
+
+.content {
+    padding: 5%;
+    flex: 1;
+    text-align: left;
+}
+
+.contentL {
+    margin: 10px 0;
+    margin-right: 5px;
+}
+
+.contentR {
+    margin: 10px 0;
+    margin-left: 5px;
+}
+
+@font-face {
+    font-family: tommysoft;
+    src: url('fonts/tommysoft.woff');
+}
+
+#imageBanner {
+    max-width: 100%;
+    height:auto;
+}
+
+#logo {
+    width: 5rem;
+    flex: 1;
 }
