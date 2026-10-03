@@ -43,6 +43,7 @@ a:hover {
 
 p {
     color: var(--text-color);
+    font-size: 140%;
 }
 
 li {
